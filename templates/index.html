@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Recommendation</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Course Recommendation System</h1>
+        <form action="/predict" method="POST">
+            <input type="number" name="age" placeholder="Enter Age" required>
+            <select name="qualification" required>
+                <option disabled selected>Choose Qualification</option>
+                <option>Bachelor</option>
+                <option>Master</option>
+                <option>PhD</option>
+            </select>
+            <select name="language" required>
+                <option disabled selected>Preferred Programming Language</option>
+                <option>Python</option>
+                <option>Java</option>
+                <option>C++</option>
+                <option>JavaScript</option>
+            </select>
+            <input type="number" name="hours" placeholder="Learning Hours/Week" required>
+            <select name="interest" required>
+                <option disabled selected>Interest Area</option>
+                <option>AI</option>
+                <option>Data</option>
+                <option>Web</option>
+            </select>
+            <button type="submit">Recommend Course</button>
+        </form>
+        {% if prediction_text %}
+        <h2>{{ prediction_text }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
