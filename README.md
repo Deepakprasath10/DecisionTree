@@ -1,4 +1,4 @@
-# DecisionTree# 🎓 Student Course Prediction Web App
+# Student Course Prediction Web App
 
 A Flask-based machine learning web application that predicts the most suitable academic course for a student based on their academic background and preferences. The prediction is made using a trained **Decision Tree Classifier**.
 
