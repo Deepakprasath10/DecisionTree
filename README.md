@@ -4,7 +4,7 @@ A Flask-based machine learning web application that predicts the most suitable a
 
 ---
 
-## 🔍 Overview
+##  Overview
 
 Many students face challenges when choosing the right course for higher education. This app helps recommend the most appropriate course based on key features like academic scores, interests, and stream.
 
